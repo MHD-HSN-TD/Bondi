@@ -1,0 +1,5 @@
+1. git init
+2. git add . 
+3. git commit -m "comment"
+4. git remote add origin https://github.com/MHD-HSN-TD/tamplate_of_html_css.git
+5. git push orinig master

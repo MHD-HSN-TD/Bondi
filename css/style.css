@@ -1,0 +1,275 @@
+:root {
+    --darkColor: #19283f;
+    --greenColor: #33d1cc;
+    --redColor: #ff3150;
+    --yellowColor: #ffc400;
+    --sectionColor: #eff7fa;
+}
+
+.yellow-color {
+    color: var(--yellowColor);
+}
+
+.green-color {
+    color: var(--greenColor);
+}
+
+.bg-yellow-color {
+    background-color: var(--yellowColor);
+}
+
+.bg-section-color {
+    background-color: var(--sectionColor);
+}
+
+.bg-dark-color {
+    background-color: var(--darkColor);
+}
+
+.bg-green-color {
+    background-color: var(--greenColor);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-btn {
+    background-color: var(--redColor) !important;
+    color: var(--yellowColor) !important;
+    transition: background-color color 0.5s !important;
+    transition: background-color 0.5s !important;
+}
+
+.main-btn:hover {
+    /* border-color: 2px solid var(--yellowColor) !important; */
+    background-color: white !important;
+    color: var(--yellowColor) !important;
+}
+
+.main-title::after {
+    content: '';
+    width: 150px;
+    height: 3px;
+    position: absolute;
+    background-color: var(--greenColor);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.btn1:hover {
+    background-color: var(--yellowColor) !important;
+    color: white !important;
+}
+
+
+/* NavBar start */
+
+.navbar {
+    background-color: var(--darkColor);
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.nav-link.active,
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--greenColor) !important;
+}
+
+.search {
+    border-left: 1px solid var(--greenColor);
+}
+
+.search svg {
+    color: var(--greenColor);
+}
+
+.navbar-toggler {
+    color: white !important;
+}
+
+.navbar .navbar-toggler {
+    box-shadow: 0 0 0 0;
+}
+
+
+/* NavBar End */
+
+
+/* landing starts */
+
+.landing {
+    background-color: var(--darkColor);
+    min-height: calc(100vh - 72px);
+}
+
+
+/* landing End */
+
+
+/* Start features */
+
+.features .icon-holder {
+    height: 200px;
+}
+
+.features .icon-holder svg {
+    left: 50%;
+    transform: translateX(-50%);
+    /* this two lines to centered the element */
+}
+
+.number {
+    font-size: 12rem;
+    color: var(--sectionColor);
+}
+
+.pen-icon {
+    color: var(--greenColor);
+}
+
+.features h4 {
+    color: var(--yellowColor);
+}
+
+
+/* Ends features */
+
+
+/* our work start */
+
+.our-work {
+    background-color: var(--sectionColor);
+}
+
+.our-work .active {
+    background-color: var(--redColor);
+    color: var(--yellowColor);
+}
+
+.our-work ul li {
+    transition: color 0.6s;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.our-work ul li:not(.active):hover {
+    color: var(--redColor);
+}
+
+.our-work .box {
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.our-work .box::before {
+    content: attr(data-work);
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    color: #eff7fa;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    font-size: 1.5rem;
+    background-color: rgb(51 209 204 / 74%);
+    transform: translateX(calc(-100% - 5px));
+}
+
+.our-work .box:hover::before {
+    transform: translateX(0);
+}
+
+
+/* our work end */
+
+
+/* team start */
+
+.mx-h {
+    height: 170px;
+}
+
+.max-width {
+    max-width: 200px;
+}
+
+
+/* team ends */
+
+
+/* start-project_starts */
+
+.start-project {
+    background-color: var(--darkColor);
+}
+
+.start-project h4 {
+    color: white;
+}
+
+.margin {
+    margin-bottom: 75px !important;
+}
+
+
+/* start-project_ends */
+
+
+/* subscribe start */
+
+.subscribe input[type="submit"] {
+    background-color: var(--darkColor) !important;
+    color: var(--yellowColor);
+    transition: all 0.8s;
+}
+
+.subscribe input[type="submit"]:hover {
+    background-color: white !important;
+    /* border: 2px solid var(--yellowColor); */
+    /* color: var(--yellowColor); */
+}
+
+.txt-color {
+    border: none;
+    background-color: var(--yellowColor);
+    border-bottom: 1px solid white;
+}
+
+.subscribe input[type="text"]:focus {
+    outline: none;
+}
+
+.subscribe input::placeholder {
+    color: white;
+}
+
+
+/* subscribe end */
+
+
+/* footer start */
+
+.footer-links {
+    transition: all 0.3s;
+}
+
+.footer-links:hover {
+    color: var(--yellowColor);
+}
+
+.ic {
+    transition: all 0.5s;
+}
+
+.ic:hover {
+    opacity: 0.8;
+}
+
+
+/* footer end */
